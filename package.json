@@ -1,0 +1,15 @@
+{
+  "name": "blood-sos",
+  "version": "1.0.0",
+  "description": "Emergency Blood Donor & SOS Alert Directory (MERN)",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c red,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "seed": "npm run seed --prefix server",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
